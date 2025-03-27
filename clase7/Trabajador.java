@@ -1,41 +1,45 @@
 package clase7;
 
 public class Trabajador {
-
-    //Atributos
+ 
+    // Atributos
     private int idTrabajador;
     private String nombre;
     private String apellido;
-
-    //Constructor, tiene el mismo nombre de la clase
+ 
+    // Constructor
     public Trabajador(int idTrabajador, String nombre, String apellido) {
         this.idTrabajador = idTrabajador;
         this.nombre = nombre;
         this.apellido = apellido;
     }
-
-    //Métodos getter
+ 
+    // métodos getter
+    public int getIdTrabajador() {
+        return idTrabajador;
+    }
+ 
     public String getNombre() {
         return nombre;
     }
-
+ 
     public String getApellido() {
         return apellido;
     }
-
-
-    public int gedIdTrabajador() {
-        return idTrabajador;
-    }
-
-    //Metodo pagar
-
-    public double pagar() {
+ 
+ 
+    public double pagar(){
         return 0.0;
     }
-
+ 
     public String toString() {
-        return "Trabajador { idTrabajador: " + idTrabajador + ", nombre: " + nombre + ", apellido: " + apellido + " }";
+        return "Trabajador { idTrabajador:" + idTrabajador +
+                " Nombre: " + nombre +
+                " Apellido: " + apellido + "}";
     }
-    
+ 
 }
+ 
+// The Operario class has been moved to its own file named Operario.java
+ 
+ 
