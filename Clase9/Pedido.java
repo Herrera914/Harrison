@@ -7,3 +7,11 @@ public class Pedido {
     private Date fecha;
     private int numeroTarjetaCredito;
 }
+//creacion de lconstructor
+public Pedido(Cliente cliente, Producto[] producto, Date fecha, int numeroTarjetaCredito) {
+    this.cliente = cliente;
+    this.producto = producto;
+    this.fecha = fecha;
+    this.numeroTarjetaCredito = numeroTarjetaCredito;
+    
+}

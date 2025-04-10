@@ -7,3 +7,4 @@ public class Foto {
       System.out.println("Imprimiendo foto " + fichero);
    }
 }
+
