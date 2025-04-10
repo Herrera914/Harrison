@@ -11,5 +11,9 @@ public class Producto {
         return numero;
     }
     
+    // Método polimórfico
+    public void mostrarDetalles() {
+        System.out.println("Producto #" + numero);
+    }
 
 }
