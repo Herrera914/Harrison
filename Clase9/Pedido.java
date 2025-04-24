@@ -3,15 +3,24 @@ import java.util.*;
 
 public class Pedido {
     private Cliente cliente;
-    private Producto[] producto;
-    private Date fecha;
-    private int numeroTarjetaCredito;
-}
-//creacion de lconstructor
-public Pedido(Cliente cliente, Producto[] producto, Date fecha, int numeroTarjetaCredito) {
-    this.cliente = cliente;
-    this.producto = producto;
-    this.fecha = fecha;
-    this.numeroTarjetaCredito = numeroTarjetaCredito;
+    private List<Producto> productos; 
+
     
+    // Constructor corregido
+    public Pedido(Cliente cliente, Date fecha) {
+        this.cliente = cliente;
+        this.productos = new ArrayList<>();
+    }
+
+    public void agregarProducto(Producto producto) {
+        productos.add(producto);
+    }
+
+    public void mostrarPedido() {
+        System.out.println("Pedido de: " + cliente.getNombre());
+        
+        for (Producto p : productos) {
+            p.mostrarDetalles();
+        }
+    }
 }
