@@ -1,9 +1,6 @@
 package Prueba1;
 
-// Clase Cliente
-// -------------
-// AGREGACIÓN: un Pedido “tiene” un Cliente, pero el Cliente
-// podría existir por separado de ese Pedido.
+
 
 public class Cliente {
     private String cedula;
